@@ -205,7 +205,7 @@ uint32_t rv32b_packh(uint32_t rs1, uint32_t rs2)
 }
 
 
-/*
+
 uint32_t xperm(uint32_t rs1, uint32_t rs2, int sz_log2)
 {
 	uint32_t r = 0;
@@ -241,7 +241,7 @@ uint32_t rv32b_xperm_w(uint32_t rs1, uint32_t rs2)
 {
 	return xperm(rs1,rs2,5);
 }
-*/
+
 
 
 

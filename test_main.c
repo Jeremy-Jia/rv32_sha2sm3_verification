@@ -206,5 +206,38 @@ int main(int argc, char** argv)
 	printf("b27 = %d\n", b27);
 
 
+	printf("********test xperm_n*********\n");
+	uint32_t a28 = 1, b28 = 0;
+	b28 = rv32b_xperm_n(1, 1);
+	printf("b28 = %d\n", b28);
+
+	printf("********test xperm_b*********\n");
+	uint32_t a29 = 1, b29 = 0;
+	b29 = rv32b_xperm_b(1, 1);
+	printf("b29 = %d\n", b29);
+
+	printf("********test rori*********\n");
+	uint32_t a30 = 1, b30 = 0;
+	b30 = rv32b_ror(1, 1);
+	printf("b30 = %d\n", b30);
+
+	printf("********test rol*********\n");
+	uint32_t a31 = 1, b31 = 0;
+	b31 = rv32b_rol(1, 1);
+	printf("b31 = %d\n", b31);
+
+
+	printf("********test orn*********\n");
+	uint32_t a32 = 1, b32 = 0;
+	b32 = rv32b_orn(1, 1);
+	printf("b32 = %d\n", b32);
+
+	printf("********test xorn*********\n");
+	uint32_t a33 = 1, b33 = 0;
+	b33 = rv32b_xnor(1, 1);
+	printf("b33 = %d\n", b33);
+
+
+
 	return 0;
 }
