@@ -1,3 +1,4 @@
+@author@jeremyDev97
 #include "bitmanip.h"
 
 //  carryless multiply
