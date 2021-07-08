@@ -4,4 +4,7 @@
 risc-v 32 K extension C verification code
 
 
-including sha2-256-512, and sm3 instructions
+including sha2-256-512, and sm3  referencing results
+
+
+Build by sdu and lntech
