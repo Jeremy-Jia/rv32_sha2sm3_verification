@@ -182,7 +182,7 @@ uint32_t rv32b_unshfl(uint32_t rs1, uint32_t rs2)
 uint32_t rv32b_pack(uint32_t rs1, uint32_t rs2)
 {
 	uint32_t lower = (rs1 << 16) >> 16;
-	uint32_t upper = (rs2 << 16) << 16;
+	uint32_t upper = (rs2 << 16);
 
 	return lower | upper;
 }

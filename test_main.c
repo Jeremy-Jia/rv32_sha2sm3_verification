@@ -154,10 +154,12 @@ int main(int argc, char** argv)
 	printf("b18 = %d\n", b18);
 
 
-	printf("********test grev*********\n");
-	uint32_t a19 = 1, b19 = 0;
-	b19 = rv32b_grev(1, 1);
-	printf("b19 = %d\n", b19);
+	printf("********test grev7/24*********\n");
+	uint32_t a19 = 1, b19_7 = 0,b19_24;
+	b19_7 = rv32b_grev(1, 7);
+	printf("b19_7 = %d\n", b19_7);
+	b19_24 = rv32b_grev(1, 24);
+	printf("b19_24 = %d\n", b19_24);
 
 	printf("********test clmul*********\n");
 	uint32_t a20 = 1, b20 = 0;
@@ -171,15 +173,15 @@ int main(int argc, char** argv)
 	printf("b21 = %d\n", b21);
 
 
-	printf("********test shfli*********\n");
+	printf("********test shfli_15*********\n");
 	uint32_t a22 = 1, b22 = 0;
-	b22 = rv32b_shfl(1, 1);
+	b22 = rv32b_shfl(1, 15);
 	printf("b22 = %d\n", b22);
 
 
-	printf("********test unshfli*********\n");
+	printf("********test unshfli_15*********\n");
 	uint32_t a23 = 1, b23 = 0;
-	b23 = rv32b_unshfl(1, 1);
+	b23 = rv32b_unshfl(1, 15);
 	printf("b23 = %d\n", b23);
 
 
@@ -200,10 +202,14 @@ int main(int argc, char** argv)
 	printf("b26 = %d\n", b26);
 
 
-	printf("********test gorc*********\n");
-	uint32_t a27 = 1, b27 = 0;
-	b27 = rv32b_gorc(1, 1);
-	printf("b27 = %d\n", b27);
+	printf("********test gorc3/4/7*********\n");
+	uint32_t a27 = 1, b27_3 = 0,b27_4 = 0,b27_7 = 0;
+	b27_3 = rv32b_gorc(1, 3);
+	printf("b27_3 = %d\n", b27_3);
+	b27_4 = rv32b_gorc(1, 4);
+	printf("b27_4 = %d\n", b27_4);
+	b27_7 = rv32b_gorc(1, 7);
+	printf("b27_7 = %d\n", b27_7);
 
 
 	printf("********test xperm_n*********\n");
