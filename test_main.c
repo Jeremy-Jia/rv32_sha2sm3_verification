@@ -1,3 +1,4 @@
+//@author JeremyDev97 for RISC-V K extension verification
 #include <stdio.h>
 
 #include "sha2_wrap.h"
